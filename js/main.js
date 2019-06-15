@@ -1,6 +1,10 @@
 {
     //apiで値を取得する
     const getQuestionData = async () => {
+        //画面をリセットする
+        reset();
+        //取得中画面を表示
+        loading();
         //フェッチ処理
         const response = await fetch('https://opentdb.com/api.php?amount=10&type=multiple');
         //JSONデータの取得
@@ -12,8 +16,6 @@
     const makeQuestion = async (questionData, count = 0, score = 0) => {
         //画面をリセットする
         reset();
-        //取得中画面を表示
-        loading();
         //questionDataがない場合にquestionDataを取得する
         if (typeof questionData === 'undefined'){
             console.log('no data')
