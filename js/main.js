@@ -17,7 +17,7 @@
         //画面をリセットする
         reset();
         //questionDataがない場合にquestionDataを取得する
-        if (typeof questionData === 'undefined'){
+        if (!questionData){
             console.log('no data')
             //問題データの取得
             questionData = await getQuestionData();
