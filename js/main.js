@@ -91,13 +91,11 @@
         });
     }
     //ボタンの追加処理
-    const createButton = (text, func) => {
+    const createButton = (text, eventListner) => {
         const button = document.createElement('button');
         button.textContent = text;
-        console.log(typeof func, "tyepeof func");
-        console.log(typeof a, "typeof a");
-        button.addEventListener ('click', (e, event = func) => {
-            　func();
+        button.addEventListener ('click', (e, event = eventListner) => {
+            　eventListner();
         });
         return button;
     }
