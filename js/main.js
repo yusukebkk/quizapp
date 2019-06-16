@@ -57,11 +57,12 @@
     }
     //ボタンの追加処理
     const addChoiceButtons = (correctAnswer, incorrectAnswers, score, count, questionData) =>{
+        //ボタンリスト作成
+        const buttonList =[];
         //全ての選択肢のリスト作成
-        let buttonList =[]
-        let allChoice = incorrectAnswers;
+        const allChoice = incorrectAnswers;
         //選択肢に正解を追加
-        allChoice.push(correctAnswer)
+        allChoice.push(correctAnswer);
         //それぞれの選択肢の
         for (let i = 0; i < 4; i++){
             //各選択肢を選んだ際に発生するイベントを規定
