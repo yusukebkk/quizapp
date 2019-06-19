@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 10px;
+}
+
+.message-area p{
+    padding: 2px 0;
+    margin: 5px 0;
+    border-top: solid 1px #aaa;
+    border-bottom: solid 1px #aaa;
+
+}
+
+.txtl{
+    font-size:30px;
+    margin: 10px;
+   
+}
+
+.txtm{
+    font-size:20px
+}
+
+button{
+
+
+}
