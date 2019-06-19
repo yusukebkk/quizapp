@@ -35,7 +35,7 @@ const addChoiceButtons = (correctAnswer, incorrectAnswers, score, count, questio
     //ボタンリスト作成
     const buttonList =[];
     //全ての選択肢のリスト作成
-    const allChoice = incorrectAnswers;
+    const allChoice = incorrectAnswers.slice();
     //選択肢に正解を追加
     allChoice.push(correctAnswer);
     //それぞれの選択肢の
